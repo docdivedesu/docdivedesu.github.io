@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>닥다이브's Stash</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .artist-holder {
+            max-width: 450px;
+            margin: 0 auto;
+        }
+        .artist-card {
+            margin-bottom: 1rem;
+            padding: 16px;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .artist-card:hover {
+            background: #fafafa;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .banner {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 6px 6px 0 0;
+            margin-bottom: 8px;
+        }
+        .profile-wrapper {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+            gap: 12px;
+        }
+        .profile {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            background: #f0f0f0;
+        }
+        .name-wrapper {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .name {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #333;
+        }
+        .item-count {
+            color: #888;
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<h1>닥다이브's Stash</h1>
+<div class="artist-holder"></div>
+<script>
+    const artists = [
+        { "name": "Nayoshi", "id": "nayoshi", "mega": "https://mega.nz/folder/jjBklbBZ#iZpctjP-viiR49a5AN5RkQ", "size": "7,55 GB" },
+        { "name": "Haozz", "id": "hao", "mega": "https://mega.nz/folder/72IGWI4K#yqs-iv-Vc2293Iuonp6RvQ", "size": "1,70 GB" },
+        { "name": "Mazjojo", "id": "mazjojo", "mega": "https://mega.nz/folder/vi4X1BQB#Mz9FJ5VbtRFPlUnjfwBXJg", "size": "2,21 GB" }
+    ];
+    artists.forEach(artist => {
+        const card = document.createElement('a');
+        card.classList.add('artist-card');
+        card.href = artist.mega;
+        card.style.textDecoration = 'none';
+        card.style.color = 'inherit';
+        card.style.display = 'block';
+
+        const banner = document.createElement('img');
+        banner.src = `images/${artist.id}/banner.jpg`;
+        banner.classList.add('banner');
+        banner.alt = `${artist.name} banner`;
+
+        const profile = document.createElement('img');
+        profile.src = `images/${artist.id}/profile.jpg`;
+        profile.classList.add('profile');
+        profile.alt = `${artist.name} profile`;
+
+        const name = document.createElement('span');
+        name.classList.add('name');
+        name.textContent = artist.name;
+
+        const size = document.createElement('span');
+        size.classList.add('item-count');
+        size.textContent = artist.size;
+
+        const nameWrapper = document.createElement('div');
+        nameWrapper.classList.add('name-wrapper');
+        nameWrapper.append(name, size);
+
+        const profileWrapper = document.createElement('div');
+        profileWrapper.classList.add('profile-wrapper');
+        profileWrapper.append(profile, nameWrapper);
+
+        card.append(banner, profileWrapper);
+        document.querySelector('.artist-holder').appendChild(card);
+    });
+</script>
+</body>
+</html>
