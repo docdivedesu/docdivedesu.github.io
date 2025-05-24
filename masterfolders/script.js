@@ -24,16 +24,16 @@ const artists = [
         "description": "COMIFURO XX | AA20 (Indonesia)",
         "socials": [
             { "name": "Twitter", "url": "https://twitter.com/mazjojomania", "icon": "fa-twitter" },
-            { "name": "Patreon", "url": "https://www.kickstarter.com/projects/archania-tarot/archania-tarot", "icon": "fa-kickstarter" }
+            { "name": "Kickstarter", "url": "https://www.kickstarter.com/projects/archania-tarot/archania-tarot", "icon": "fa-kickstarter" }
         ]
     },
     {
-        "name": "TBA",
-        "id": "tba",
-        "mega": "",
-        "description": "TBA",
+        "name": "BLACKKDOG",
+        "id": "blackkdogg",
+        "mega": "https://mega.nz/folder/ayZBiQqI#hLE8Ugpyr3XwoIyCBSppsg",
+        "description": "⚠️NSFW⚠️ / Adult Only",
         "socials": [
-            { "name": "?", "url": "", "icon": "fa-question" }
+            { "name": "Twitter", "url": "https://x.com/BLACKKDOGG", "icon": "fa-twitter" }
         ]
     },
     {
