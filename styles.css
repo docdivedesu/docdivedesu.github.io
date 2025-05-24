@@ -44,14 +44,14 @@ img {
     user-drag: none;
 }
 
-.artist-holder {
+.artist-holder, .button-holder {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1rem;
     margin-bottom: 2rem;
 }
 
-.artist-card {
+.artist-card, .custom-btn {
     background: #f1f1f1;
     border-radius: 4px;
     border: 1px solid #ddd;
@@ -60,7 +60,7 @@ img {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.artist-card:hover {
+.artist-card:hover, .custom-btn:hover {
     background: #f8f8f8;
 }
 
