@@ -2,7 +2,7 @@ const artists = [
     {
         "name": "Nayoshi",
         "id": "nayoshi",
-        "mega": "https://mega.nz/folder/jjBklbBZ#iZpctjP-viiR49a5AN5RkQ",
+        "mega": "https://mega.nz/folder/Oz5DUCZB#LSwAsjqiY5EFPcn8k7xg2g",
         "description": "男の子とかケモノとか🔞",
         "socials": [
             { "name": "Twitter", "url": "https://twitter.com/nayoshi744", "icon": "fa-twitter" }
@@ -37,7 +37,7 @@ const artists = [
         ]
     },
     {
-        "name": "TBA",
+        "name": "Vinceteaa",
         "id": "tba",
         "mega": "",
         "description": "TBA",
@@ -46,7 +46,7 @@ const artists = [
         ]
     },
     {
-        "name": "TBA",
+        "name": "Suyohara",
         "id": "tba",
         "mega": "",
         "description": "TBA",
